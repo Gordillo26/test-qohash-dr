@@ -1,13 +1,13 @@
 # Test Qohash
 
-Ceci est un test technique pour l'entreprise Qohash, le test consiste d'un explorateur de fichier basique.
-À peu près comme un stockage dans le Cloud mais en lecture seule.
+Ceci est un test technique pour l'entreprise Qohash, le test consiste d'une page qui affiche le contenu d'un dossier.
+L'application fonctionne qu'un Linux
 
 ## Installation
 
 Installation des dépendence pour partir l'API
 
-Un script est fourni avec la solution mais vous pouvez le faire manuellement si vous le désirez
+Un script de démarrage est fourni avec la solution mais vous pouvez le faire manuellement si vous rencontrez des problèmes
 
 Python
 ```bash
