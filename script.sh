@@ -8,7 +8,7 @@ pip install flask
 pip install -U flask-cors
 
 sudo apt install curl
-curl -sL https://deb.node.source.com/setup_12.c | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install npm@latest -g
 sudo npm install -g @angular/cli
