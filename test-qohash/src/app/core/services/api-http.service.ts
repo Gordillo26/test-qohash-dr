@@ -20,7 +20,7 @@ export class ApiHttpService {
     private httpClient: HttpClient
   ) { }
 
-  public getFoldersElements(){
-    return this.httpClient.get(this.API_SERVER + "/folders", { 'headers': headers });
+  public getFoldersElements(pathToRequest : string){
+    return this.httpClient.get(this.API_SERVER + "/folders/" + pathToRequest, { 'headers': headers });
   }
 }

@@ -14,6 +14,6 @@ export class AppComponent {
   }
 
   getFolderInfo(){
-    this.router.navigateByUrl('file-explorer/' + this.pathFolder);
+    this.router.navigateByUrl('file-explorer/' + encodeURIComponent(this.pathFolder));
 }
 }

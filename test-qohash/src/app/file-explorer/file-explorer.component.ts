@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ApiHttpService } from '../core/services/api-http.service';
 
 
@@ -21,14 +22,23 @@ export class FileExplorerComponent implements OnInit {
   dataSource = []; //call API
   currentFolderSize = "0";
 
+  pathToRequest = ""
 
 
-  constructor(private dataService: ApiHttpService) { }
+
+  constructor(private dataService: ApiHttpService,
+    private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
-    this.dataService.getFoldersElements().subscribe((data: any)=>{
-      this.currentFolderSize = data.shift();
-      this.dataSource = data;
-    }
-  )}
+    this.route.queryParams.subscribe(params => {
+      this.pathToRequest = params['path'];
+
+      this.dataService.getFoldersElements(this.pathToRequest).subscribe((data: any) => {
+        this.currentFolderSize = data.shift();
+        this.dataSource = data;
+      }
+      )
+    });
+
+  }
 }
