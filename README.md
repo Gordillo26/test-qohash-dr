@@ -7,7 +7,7 @@ L'application fonctionne qu'en Linux
 
 Installation des dépendence pour partir l'API
 
-Un script de démarrage est fourni avec la solution mais vous pouvez le faire manuellement si vous rencontrez des problèmes
+Un script de démarrage est fourni avec la solution mais vous pouvez le faire manuellement si vous rencontrez des problèmes.
 Ne pas oublier de faire le script executable
 
 ```bash
