@@ -1,7 +1,7 @@
 # Test Qohash
 
 Ceci est un test technique pour l'entreprise Qohash, le test consiste d'une page qui affiche le contenu d'un dossier.
-L'application fonctionne qu'un Linux
+L'application fonctionne qu'en Linux
 
 ## Installation
 
