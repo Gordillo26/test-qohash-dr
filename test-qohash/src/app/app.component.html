@@ -1,19 +1,20 @@
 <div class="toolbar" role="banner">
-  <img
-    src="https://qohash.com/wp-content/uploads/2021/07/Group-6686.svg"
-  />
+  <img src="https://qohash.com/wp-content/uploads/2021/07/Group-6686.svg" />
 </div>
 
 <div class="content" role="main">
 
 
   <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+    <a class="card" href="file-explorer">
       <span>Choose folder</span>
     </a>
+    <p><input type="text" [(ngModel)]="pathFolder"></p>
+    <h1> {{ pathFolder }}</h1>
 
+    <button type="button" (click)="getFolderInfo()">Search</button>
 
   </div>
 
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
