@@ -34,12 +34,10 @@ sudo npm install -g @angular/cli
 
 Démarrage de l'application
 ```bash
-sudo apt install curl
-curl -sL https://deb.node.source.com/setup_12.c | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo npm install npm@latest -g
-sudo npm install -g @angular/cli
+python3 API.py
+ng serve 
 ```
+À noter que "ng serve" doit être executé à l'interieur du porjet Angular.
 
 
 ## Auteur
