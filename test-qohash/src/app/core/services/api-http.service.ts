@@ -21,6 +21,8 @@ export class ApiHttpService {
   ) { }
 
   public getFoldersElements(pathToRequest : string){
+    let params = new URLSearchParams();
+    params.append("path", pathToRequest)
     return this.httpClient.get(this.API_SERVER + "/folders/" + pathToRequest, { 'headers': headers });
   }
 }

@@ -5,14 +5,12 @@ from flask import Flask, json
 from flask.wrappers import Response
 from flask_cors import CORS
 
-
-
 api = Flask(__name__)
 cors = CORS(api)
 
 @api.route('/folders/<path>', methods=['GET'])
 def get_folders(path):
-    pathDecoded = unquote(url)
+    pathDecoded = unquote(path)
     stream = os.popen('ls -lhS ' + pathDecoded)
     output = stream.readlines()
     lines = []
