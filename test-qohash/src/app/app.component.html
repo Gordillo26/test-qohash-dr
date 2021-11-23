@@ -6,15 +6,13 @@
 
 
   <div class="card-container">
-    <a class="card" href="file-explorer">
-      <span>Choose folder</span>
-    </a>
-    <p><input type="text" [(ngModel)]="pathFolder"></p>
-    <h1> {{ pathFolder }}</h1>
-
-    <button type="button" (click)="getFolderInfo()">Search</button>
-
+    <p class="card">
+      <input type="text" [(ngModel)]="pathFolder">
+      <button type="button" (click)="getFolderInfo()">Search</button>
+    </p>
   </div>
+
+  <h4 *ngIf='pathFolder != ""'> Current path: {{ pathFolder }}</h4>
 
 
   <router-outlet></router-outlet>
