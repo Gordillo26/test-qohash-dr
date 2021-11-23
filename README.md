@@ -7,7 +7,13 @@ L'application fonctionne qu'en Linux
 
 Installation des dépendence pour partir l'API
 
-Un script de démarrage est fourni avec la solution mais vous pouvez le faire manuellement si vous rencontrez des problèmes
+Un script de démarrage est fourni avec la solution mais vous pouvez le faire manuellement si vous rencontrez des problèmes.
+Ne pas oublier de faire le script executable
+
+```bash
+chmod 774 script.sh
+```
+
 
 Python
 ```bash
@@ -21,6 +27,7 @@ Module Flask pour faire un mock d'API
 ```bash
 sudo apt install -y python3-pip
 pip install flask
+pip install -U flask-cors
 ```
 
 Installation de NodeJS et Angular pour le frontend
@@ -38,6 +45,15 @@ python3 API.py
 ng serve 
 ```
 À noter que "ng serve" doit être executé à l'interieur du porjet Angular.
+
+
+## Todo
+À implementer pour est "Prod-ready"
+
+ - Support to Mozilla Firefox (Présentement l'app supporte suelement les navigateurs basées sur chromium)
+ - Choisir le chemin à l'aide d'un Dialog-box ou popup.
+ - Être capable de choisir un dossier de la liste pour y naviguer.
+ - Support pour Windows (Nice to).
 
 
 ## Auteur
